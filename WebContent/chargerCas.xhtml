@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr" xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets">
+<h:head>
+	<meta charset="UTF-8" />
+	<title>Charger un cas</title>
+</h:head>
+<h:body>
+	<h:form>
+	
+		<h:outputLabel for="titre">Titre Projet</h:outputLabel>
+		<h:inputText id="titre" value="#{insererCasBean.cas.titre}" />
+		<br />
+		<h:outputLabel for="categorie">Catégorie</h:outputLabel>
+		<h:inputText id="categorie" value="#{insererCasBean.cas.categorie}" />
+		<br />
+		<h:outputLabel for="Autre">Autre Catégorie</h:outputLabel>
+		<h:inputText id="Autre" value="#{insererCasBean.cas.autreCategorie}" />
+		<br />
+		<h:outputLabel for="duree">Durée</h:outputLabel>
+		<h:inputText id="duree" value="#{insererCasBean.cas.duree}" />
+		<br />
+		<h:outputLabel for="cout">Coût</h:outputLabel>
+		<h:inputText id="cout" value="#{insererCasBean.cas.cout}" />
+		<br />
+		<h:outputLabel for="Description">Déscription</h:outputLabel>
+		<h:inputText id="description"
+			value="#{insererCasBean.cas.description}" />
+		<br />
+		<h:outputLabel for="numCompteBank">Numéro du compte banquaire</h:outputLabel>
+		<h:inputText id="numCompteBank"
+			value="#{insererCasBean.cas.numCompteBank}" />
+		<br />
+
+
+		<!-- <h:inputFile id="file1" value="#{insererCasBean.cas.file1}"
+			validator="#{insererCasBean.cas.validateFile1}" />
+		<h:commandButton value="Upload" action="#{insererCasBean.cas.upload1}">
+			<f:ajax execute="file1" render="@all" />
+		</h:commandButton>
+		<h:inputTextarea value="#{insererCasBean.cas.pdf1}" readonly="true" />
+
+		<h:inputFile id="file2" value="#{insererCasBean.cas.file2}"
+			validator="#{insererCasBean.cas.validateFile2}" />
+		<h:commandButton value="Upload" action="#{insererCasBean.cas.upload2}">
+			<f:ajax execute="file2" render="@all" />
+		</h:commandButton>
+		<h:inputTextarea value="#{insererCasBean.cas.pdf2}" readonly="true" />
+
+		<h:inputFile id="file3" value="#{insererCasBean.cas.file3}"
+			validator="#{insererCasBean.cas.validateFile3}" />
+		<h:commandButton value="Upload" action="#{insererCasBean.cas.upload3}">
+			<f:ajax execute="file3" render="@all" />
+		</h:commandButton>
+		<h:inputTextarea value="#{insererCasBean.cas.pdf3}" readonly="true" />
+
+		<h:inputFile id="video" value="#{insererCasBean.cas.video}"
+			validator="#{insererCasBean.cas.validateFileV}" />
+		<h:commandButton value="Upload" action="#{insererCasBean.cas.uploadV}">
+			<f:ajax execute="fileV" render="@all" />
+		</h:commandButton>
+		<h:inputTextarea value="#{insererCasBean.cas.videoContent}"
+			readonly="true" />
+
+		<h:inputFile id="img" value="#{insererCasBean.cas.img}"
+			validator="#{insererCasBean.cas.validateFileI}" />
+		<h:commandButton value="Upload" action="#{insererCasBean.cas.uploadI}">
+			<f:ajax execute="fileI" render="@all" />
+		</h:commandButton>
+		<h:inputTextarea value="#{insererCasBean.cas.imgContent}"
+			readonly="true" /> -->
+
+		<h:commandButton value="InsertionCas"	action="#{insererCasBean.insererCas}" />
+	</h:form>
+</h:body>
+</html>

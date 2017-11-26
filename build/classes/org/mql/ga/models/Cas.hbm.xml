@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+
+<hibernate-mapping>
+	<class name="org.mql.ga.models.Cas" table="cas">
+		<id name="id" column="id" type="int"/>
+		<property name="idAssociation" column="idAssociation" type="int"/>
+		<property name="categorie" column="categorie" type="string"/>
+		<property name="autreCategorie" column="autrecategorie" type="string"/>
+		<property name="titre" column="titre" type="string"/>
+		<property name="ville" column="ville" type="string"/>
+		<property name="duree" column="duree" type="string"/>
+		<property name="cout" column="cout" type="string"/>
+		<property name="description" column="description" type="string"/>
+		<property name="numCompteBank" column="numcomptebank" type="string"/>
+		<property name="pdf1" column="pdf1" type="string"/>
+		<property name="pdf2" column="pdf1" type="string"/>
+		<property name="pdf3" column="pdf1" type="string"/>
+		<property name="img" column="img" type="string"/>
+		<property name="video" column="video" type="string"/>
+	</class>
+</hibernate-mapping>
