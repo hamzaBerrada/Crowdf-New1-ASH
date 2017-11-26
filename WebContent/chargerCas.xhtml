@@ -34,43 +34,47 @@
 			value="#{insererCasBean.cas.numCompteBank}" />
 		<br />
 
-
-		<!-- <h:inputFile id="file1" value="#{insererCasBean.cas.file1}"
-			validator="#{insererCasBean.cas.validateFile1}" />
-		<h:commandButton value="Upload" action="#{insererCasBean.cas.upload1}">
+		<h:outputLabel for="titre">Ajouter un fichier :</h:outputLabel>
+		<h:inputFile id="file1" value="#{insererCasBean.cas.pdf1}"
+			validator="#{UploadFile.validateFile1}" />
+		<h:commandButton value="Upload" action="#{UploadFile.upload1}">
 			<f:ajax execute="file1" render="@all" />
 		</h:commandButton>
 		<h:inputTextarea value="#{insererCasBean.cas.pdf1}" readonly="true" />
 
-		<h:inputFile id="file2" value="#{insererCasBean.cas.file2}"
-			validator="#{insererCasBean.cas.validateFile2}" />
-		<h:commandButton value="Upload" action="#{insererCasBean.cas.upload2}">
+		<h:outputLabel for="titre">Ajouter un fichier :</h:outputLabel>
+		<h:inputFile id="file2" value="#{insererCasBean.cas.pdf2}"
+			validator="#{UploadFile.validateFile2}" />
+		<h:commandButton value="Upload" action="#{UploadFile.upload2}">
 			<f:ajax execute="file2" render="@all" />
 		</h:commandButton>
 		<h:inputTextarea value="#{insererCasBean.cas.pdf2}" readonly="true" />
 
-		<h:inputFile id="file3" value="#{insererCasBean.cas.file3}"
-			validator="#{insererCasBean.cas.validateFile3}" />
-		<h:commandButton value="Upload" action="#{insererCasBean.cas.upload3}">
+		<h:outputLabel for="titre">Ajouter un fichier :</h:outputLabel>
+		<h:inputFile id="file3" value="#{insererCasBean.cas.pdf3}"
+			validator="#{UploadFile.validateFile3}" />
+		<h:commandButton value="Upload" action="#{UploadFile.upload3}">
 			<f:ajax execute="file3" render="@all" />
 		</h:commandButton>
 		<h:inputTextarea value="#{insererCasBean.cas.pdf3}" readonly="true" />
 
+		<h:outputLabel for="titre">Ajouter une video :</h:outputLabel>
 		<h:inputFile id="video" value="#{insererCasBean.cas.video}"
-			validator="#{insererCasBean.cas.validateFileV}" />
-		<h:commandButton value="Upload" action="#{insererCasBean.cas.uploadV}">
+			validator="#{UploadFile.validateFileV}" />
+		<h:commandButton value="Upload" action="#{UploadFile.uploadV}">
 			<f:ajax execute="fileV" render="@all" />
 		</h:commandButton>
-		<h:inputTextarea value="#{insererCasBean.cas.videoContent}"
+		<h:inputTextarea value="#{insererCasBean.cas.fileContentV}"
 			readonly="true" />
 
+		<h:outputLabel for="titre">Ajouter une image :</h:outputLabel>
 		<h:inputFile id="img" value="#{insererCasBean.cas.img}"
-			validator="#{insererCasBean.cas.validateFileI}" />
-		<h:commandButton value="Upload" action="#{insererCasBean.cas.uploadI}">
+			validator="#{UploadFile.validateFileI}" />
+		<h:commandButton value="Upload" action="#{UploadFile.uploadI}">
 			<f:ajax execute="fileI" render="@all" />
 		</h:commandButton>
-		<h:inputTextarea value="#{insererCasBean.cas.imgContent}"
-			readonly="true" /> -->
+		<h:inputTextarea value="#{insererCasBean.cas.fileContentI}"
+			readonly="true" />
 
 		<h:commandButton value="InsertionCas"	action="#{insererCasBean.insererCas}" />
 	</h:form>

@@ -19,7 +19,9 @@ public class InsererCasBean {
 	}
 	
 	public void insererCas() {
+		System.out.println(cas);
 		casDaoService.create(cas);//hanta haddi atadini l service li bdawro ayadini l dao li mnha l bd
+		System.out.println(cas);
 	}
 
 	public Cas getCas() {

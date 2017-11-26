@@ -216,6 +216,17 @@ public class Cas {
 	public void setFileContentV(String fileContentV) {
 		this.fileContentV = fileContentV;
 	}
+
+
+	@Override
+	public String toString() {
+		return "Cas [idAssociation=" + idAssociation + ", titre=" + titre + ", categorie=" + categorie
+				+ ", autreCategorie=" + autreCategorie + ", ville=" + ville + ", duree=" + duree + ", cout=" + cout
+				+ ", description=" + description + ", numCompteBank=" + numCompteBank + ", pdf1=" + pdf1
+				+ ", fileContent1=" + fileContent1 + ", pdf2=" + pdf2 + ", fileContent2=" + fileContent2 + ", pdf3="
+				+ pdf3 + ", fileContent3=" + fileContent3 + ", img=" + img + ", fileContentI=" + fileContentI
+				+ ", video=" + video + ", fileContentV=" + fileContentV + "]";
+	}
 	
 	
 
