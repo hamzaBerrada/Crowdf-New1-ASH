@@ -9,74 +9,33 @@
 </h:head>
 <h:body>
 	<h:form>
-	
+		
 		<h:outputLabel for="titre">Titre Projet</h:outputLabel>
-		<h:inputText id="titre" value="#{insererCasBean.cas.titre}" />
-		<br />
+		<h:inputText id="titre" value="#{InsererCasBean.cas.titre}" />
+		<br />		<br />
 		<h:outputLabel for="categorie">Catégorie</h:outputLabel>
-		<h:inputText id="categorie" value="#{insererCasBean.cas.categorie}" />
-		<br />
-		<h:outputLabel for="Autre">Autre Catégorie</h:outputLabel>
-		<h:inputText id="Autre" value="#{insererCasBean.cas.autreCategorie}" />
-		<br />
+		<h:inputText id="categorie" value="#{InsererCasBean.cas.categorie}" />
+		<br />		<br />
+		<h:outputLabel for="autre">Autre Catégorie</h:outputLabel>
+		<h:inputText id="autre" value="#{InsererCasBean.cas.autreCategorie}" />
+		<br />		<br />
 		<h:outputLabel for="duree">Durée</h:outputLabel>
-		<h:inputText id="duree" value="#{insererCasBean.cas.duree}" />
-		<br />
+		<h:inputText id="duree" value="#{InsererCasBean.cas.duree}" />
+		<br />		<br />
 		<h:outputLabel for="cout">Coût</h:outputLabel>
-		<h:inputText id="cout" value="#{insererCasBean.cas.cout}" />
-		<br />
-		<h:outputLabel for="Description">Déscription</h:outputLabel>
+		<h:inputText id="cout" value="#{InsererCasBean.cas.cout}" />
+		<br />		<br />
+		<h:outputLabel for="description">Déscription</h:outputLabel>
 		<h:inputText id="description"
-			value="#{insererCasBean.cas.description}" />
-		<br />
+			value="#{InsererCasBean.cas.description}" />
+		<br />		<br />
 		<h:outputLabel for="numCompteBank">Numéro du compte banquaire</h:outputLabel>
 		<h:inputText id="numCompteBank"
-			value="#{insererCasBean.cas.numCompteBank}" />
+			value="#{InsererCasBean.cas.numCompteBank}" />
 		<br />
-
-		<h:outputLabel for="titre">Ajouter un fichier :</h:outputLabel>
-		<h:inputFile id="pdf1" value="#{insererCasBean.cas.pdf1}"
-			validator="#{UploadFile.validateFile1}" />
-		<h:commandButton value="Upload" action="#{UploadFile.upload1}">
-			<f:ajax execute="pdf1" render="@all" />
-		</h:commandButton>
-		<h:inputTextarea value="#{insererCasBean.cas.pdf1}" readonly="true" />
-	<br />
-		<h:outputLabel for="titre">Ajouter un fichier :</h:outputLabel>
-		<h:inputFile id="pdf2" value="#{insererCasBean.cas.pdf2}"
-			validator="#{UploadFile.validateFile2}" />
-		<h:commandButton value="Upload" action="#{UploadFile.upload2}">
-			<f:ajax execute="pdf2" render="@all" />
-		</h:commandButton>
-		<h:inputTextarea value="#{insererCasBean.cas.pdf2}" readonly="true" />
-	<br />
-		<h:outputLabel for="titre">Ajouter un fichier :</h:outputLabel>
-		<h:inputFile id="pdf3" value="#{insererCasBean.cas.pdf3}"
-			validator="#{UploadFile.validateFile3}" />
-		<h:commandButton value="Upload" action="#{UploadFile.upload3}">
-			<f:ajax execute="pdf3" render="@all" />
-		</h:commandButton>
-		<h:inputTextarea value="#{insererCasBean.cas.pdf3}" readonly="true" />
-	<br />
-		<h:outputLabel for="titre">Ajouter une video :</h:outputLabel>
-		<h:inputFile id="video" value="#{insererCasBean.cas.video}"
-			validator="#{UploadFile.validateFileV}" />
-		<h:commandButton value="Upload" action="#{UploadFile.uploadV}">
-			<f:ajax execute="video" render="@all" />
-		</h:commandButton>
-		<h:inputTextarea value="#{insererCasBean.cas.fileContentV}"
-			readonly="true" />
-	<br />
-		<h:outputLabel for="titre">Ajouter une image :</h:outputLabel>
-		<h:inputFile id="img" value="#{insererCasBean.cas.img}"
-			validator="#{UploadFile.validateFileI}" />
-		<h:commandButton value="Upload" action="#{UploadFile.uploadI}">
-			<f:ajax execute="img" render="@all" />
-		</h:commandButton>
-		<h:inputTextarea value="#{insererCasBean.cas.fileContentI}"
-			readonly="true" /> 
-	<br />
-		<h:commandButton value="InsertionCas"	action="#{insererCasBean.insererCas}" /> 
+	
+		
+		<h:commandButton value="InsertionCas"	action="#{InsererCasBean.insererCas}" /> 
 	</h:form>
 </h:body>
 </html>
