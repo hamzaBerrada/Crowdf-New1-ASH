@@ -9,7 +9,7 @@ import org.mql.ga.services.CasDaoService;
 @RequestScoped
 public class InsererCasBean {
 
-	private Cas cas;
+	public Cas cas;
 	private CasDaoService casDaoService;
 	
 
