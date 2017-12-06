@@ -6,12 +6,14 @@
 	<managed-bean>
 		<managed-bean-name>InsererCasBean</managed-bean-name>
 		<managed-bean-class>org.mql.gc.actions.InsererCasBean</managed-bean-class>
-		<managed-bean-scope>request</managed-bean-scope>
+		<managed-bean-scope>application</managed-bean-scope>
 	</managed-bean>
-	<managed-bean>
-		<managed-bean-name>UploadFileBean</managed-bean-name>
-		<managed-bean-class>org.mql.gc.actions.UploadFileBean</managed-bean-class>
+	
+	
+<!-- 	<managed-bean>
+		<managed-bean-name>ValidateFileBean</managed-bean-name>
+		<managed-bean-class>org.mql.gc.actions.ValidateFileBean</managed-bean-class>
 		<managed-bean-scope>view</managed-bean-scope>
-	</managed-bean>
+	</managed-bean> --> 
 
 </faces-config>

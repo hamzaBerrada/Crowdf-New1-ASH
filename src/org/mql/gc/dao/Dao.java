@@ -16,10 +16,19 @@ public class Dao{
 		SessionFactory sessionFactory = config.configure().buildSessionFactory();//.configure("config/hibernate.cfg.xml")
 		session = sessionFactory.openSession();// hna tanhal session ahah
 		System.out.println("FIN OPENNING SESSION");
+		
 	}
 
 	public void closeSession() {
 		session.close();
+	}
+
+	public Session getSession() {
+		return session;
+	}
+
+	public void setSession(Session session) {
+		this.session = session;
 	}
 
 }

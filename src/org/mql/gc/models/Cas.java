@@ -1,6 +1,6 @@
 package org.mql.gc.models;
 
-import javax.servlet.http.Part;
+import org.primefaces.model.UploadedFile;
 
 public class Cas {
 	private int id;
@@ -13,15 +13,15 @@ public class Cas {
 	private double cout;
 	private String description;
 	private String numCompteBank;
-	private Part pdf1;
+	private UploadedFile pdf1;
 	private String fileContent1;
-	private Part pdf2;
+	private UploadedFile pdf2;
 	private String fileContent2;
-	private Part pdf3;
+	private UploadedFile pdf3;
 	private String fileContent3;
-	private Part img;
+	private UploadedFile img;
 	private String fileContentI;
-	private Part video;
+	private UploadedFile video;
 	private String fileContentV;
 
 
@@ -129,12 +129,12 @@ public class Cas {
 	}
 
 
-	public Part getPdf1() {
+	public UploadedFile getPdf1() {
 		return pdf1;
 	}
 
 
-	public void setPdf1(Part pdf1) {
+	public void setPdf1(UploadedFile pdf1) {
 		this.pdf1 = pdf1;
 	}
 
@@ -149,12 +149,14 @@ public class Cas {
 	}
 
 
-	public Part getPdf2() {
+	
+
+	public UploadedFile getPdf2() {
 		return pdf2;
 	}
 
 
-	public void setPdf2(Part pdf2) {
+	public void setPdf2(UploadedFile pdf2) {
 		this.pdf2 = pdf2;
 	}
 
@@ -169,12 +171,12 @@ public class Cas {
 	}
 
 
-	public Part getPdf3() {
+	public UploadedFile getPdf3() {
 		return pdf3;
 	}
 
 
-	public void setPdf3(Part pdf3) {
+	public void setPdf3(UploadedFile pdf3) {
 		this.pdf3 = pdf3;
 	}
 
@@ -189,12 +191,12 @@ public class Cas {
 	}
 
 
-	public Part getImg() {
+	public UploadedFile getImg() {
 		return img;
 	}
 
 
-	public void setImg(Part img) {
+	public void setImg(UploadedFile img) {
 		this.img = img;
 	}
 
@@ -209,12 +211,12 @@ public class Cas {
 	}
 
 
-	public Part getVideo() {
+	public UploadedFile getVideo() {
 		return video;
 	}
 
 
-	public void setVideo(Part video) {
+	public void setVideo(UploadedFile video) {
 		this.video = video;
 	}
 
